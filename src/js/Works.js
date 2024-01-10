@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import './Works.css';
+import '../css/Works.css';
 import Aos from "aos";
 import 'aos/dist/aos.css'
 
 function Works() { 
     useEffect(()=> {
-        Aos.init({duration: 1500})
+        Aos.init({duration: 2000})
     }, [])
   return (
     <div>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import './Footer.css';
+import '../css/Footer.css';
 import Aos from "aos";
 import 'aos/dist/aos.css'
 

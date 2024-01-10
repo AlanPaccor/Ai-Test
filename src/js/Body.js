@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import './Body.css';
+import '../css/Body.css';
 import Spline from '@splinetool/react-spline';
 
 
