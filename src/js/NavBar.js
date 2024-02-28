@@ -23,7 +23,7 @@ function NavBar() {
     <body>
       <header>
       <div className='logo'>
-        <img
+        {/* <img
           className='logoImage'
           src='STRATISFY.png'
           style={{
@@ -32,7 +32,7 @@ function NavBar() {
             display: 'block', // Remove extra space below the image
             margin: '15px 0 auto',
           }}
-        />
+        /> */}
       </div>
         <ul>
           <li><a href='#'>Login</a></li>

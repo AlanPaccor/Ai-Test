@@ -15,8 +15,9 @@ function Body() {
                 </div>
                 <div className="overlay"></div>
             </div>
-            <a href="#" className="TryFree">
-               Get Started
+            <a class="box" href="test" target="_blank">
+                <span></span>
+                <h2>Get Started</h2>
             </a>
             <p href="#" className="Slogan">
                Learn To Create. Create To Learn
