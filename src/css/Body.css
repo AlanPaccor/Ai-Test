@@ -29,6 +29,7 @@
 
 .body{
   margin-top: 5%;
+  overflow-x: hidden;
 }
 .TryFree{
   color: black;
