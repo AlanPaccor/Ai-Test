@@ -25,6 +25,8 @@
   border: 1px solid #000000; /* Black border for the track */
 }
 
+
+
 .body{
   margin-top: 5%;
 }
@@ -91,7 +93,7 @@
 .Slogan{
   position: absolute;
   top: 90%;
-  left: 43.9%;
+  left: 43.4%;
   display: inline-block;
   z-index: 1;
   color: rgb(133, 133, 133);
@@ -103,7 +105,7 @@ a.box {
 .box {
   position: absolute;
   top: 80%;
-  left: 45%;
+  left: 44.5%;
   width: 200px;
   height: 80px;
   background: rgba(0, 0, 0, 0.75);

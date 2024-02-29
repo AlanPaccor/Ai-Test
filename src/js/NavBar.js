@@ -22,23 +22,15 @@ function NavBar() {
   return (
     <body>
       <header>
-      <div className='logo'>
-        {/* <img
-          className='logoImage'
-          src='STRATISFY.png'
-          style={{
-            width: '80px', // Adjust the width as needed
-            height: 'auto', // Maintain aspect ratio
-            display: 'block', // Remove extra space below the image
-            margin: '15px 0 auto',
-          }}
-        /> */}
-      </div>
+      
         <ul>
-          <li><a href='#'>Login</a></li>
-          <li><a href='#'>Buy</a></li>
-          <li><a href='#'>Contact</a></li>
-          <li><a href='#'>FAQ</a></li>
+          <li className='hover'><a href='#'>Login</a></li>
+          
+          <li className='hover'><a href='#'>Buy</a></li>
+          
+          <li className='hover'><a href='#'>Contact</a></li>
+          
+          <li className='hover'><a href='#'>FAQ</a></li>
         </ul>
       </header>
     </body>
