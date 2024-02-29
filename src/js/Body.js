@@ -1,10 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import '../css/Body.css';
 import Spline from '@splinetool/react-spline';
 
 
-function Body() {
 
+function Body() {
     return (
         <div className="container">
             <div className="spline-container">
@@ -22,6 +22,13 @@ function Body() {
             <p href="#" className="Slogan">
                Learn To Create. Create To Learn
             </p>
+            <div className="gradient">
+                <span className="color-1"></span>
+                <span className="color-2"></span>
+                <span className="color-3"></span>
+                <span className="color-4"></span>
+                <span className="color-5"></span>
+            </div>
         </div>
       );
 }
