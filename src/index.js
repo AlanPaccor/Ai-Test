@@ -1,19 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Nav from './Nav';
 import reportWebVitals from './reportWebVitals';
-import NavBar from './js/NavBar';
-import Body from './js/Body';
-import Footer from './js/footer';
-import Works from './js/Works';
+import Body from './Body';
+import Slides from './Slides';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavBar />
+    <Nav />
     <Body />
-    <Works />
-    <Footer />
+    <Slides />
   </React.StrictMode>
 );
 
