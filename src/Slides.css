@@ -1,7 +1,135 @@
-.body {
-    background-color: #101517;
-    height: 35vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center vertically */
+.pract {
+  display: inline-block;
+  position: relative; /* Set container position to relative */
+}
+
+.picture {
+  margin-right: 15px;
+  transition: .5s;
+  border-radius: 6%;
+}
+
+.seeButton {
+  background-color: white;
+  color: #101517;
+  position: absolute;
+  opacity: 0;
+  top: 55%; /* Initial position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease, top 0.5s ease; /* Add transition effect for smooth visibility change and position change */
+  border-radius: 5%;
+  padding: 5px 10px; 
+}
+
+.pract:hover .seeButton {
+  opacity: 1; /* Display the button on hover */
+  top: 50%; /* New position on hover */
+}
+
+.pract:hover .picture {
+  opacity: 50%;
+}
+.pract .seeButton:hover {
+  opacity: 50%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+/*   background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
+  height: 250px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before, .slider::after {
+/*   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
+  content: "";
+  height: 200px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  padding-left: 20px;
+}
+.slider:hover .slide-track {
+  animation-play-state: paused; /* Pause the animation on hover */
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(calc(-250px * 7)); /* Start from the opposite side */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slider2 .slide-track {
+  animation: scroll-reverse 40s linear infinite; /* Use the reverse animation */
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider2 {
+/*   background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
+  height: 250px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+}
+.slider2::before, .slider::after {
+/*   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
+  content: "";
+  height: 200px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider2::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider2::before {
+  left: 0;
+  top: 0;
+}
+
+.slider2 .slide {
+  height: 100px;
+  width: 250px;
+  padding-left: 20px;
+}
+.slider2:hover .slide-track {
+  animation-play-state: paused; /* Pause the animation on hover */
+}

@@ -5,6 +5,7 @@ import Nav from './Nav';
 import reportWebVitals from './reportWebVitals';
 import Body from './Body';
 import Slides from './Slides';
+import Select from './Select';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <Nav />
     <Body />
     <Slides />
+    <Select />
   </React.StrictMode>
 );
 

@@ -1,0 +1,94 @@
+.selectBody {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Set height of body */
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selectContainer {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start of the cross axis (left for row, top for column) */
+    width: 100%;
+    height: 90%;
+}
+
+.selectContent {
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.bigSelect {
+    /* Styles for bigSelect */
+    font-size: 60px;
+    margin: 5px 0; /* Adjust the margin top and bottom */
+    height: 45px;
+}
+
+.smallSelect {
+    /* Styles for smallSelect */
+    font-size: 16px;
+    width:45%;
+    margin-top: 40px;
+}
+.bigSelect, .smallSelect {
+    color: white;
+}
+
+.selectContent {
+    position: relative; /* Make the container for links and image relative */
+    width: 100%;
+    height: 100%;
+}
+
+.selectLinks {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+}
+
+.link2, .link3, .link4, .link5, .link6{
+    margin-bottom: 12px; /* Adjust spacing between links */
+    color: darkgray;
+    font-size: 26px;
+    transition: 0.4s;
+    width: 15%;
+}
+
+.link1{
+    color: darkgray;
+    margin-top: 7%;
+    font-size: 26px;
+    margin-bottom: 12px; /* Adjust spacing between links */
+    transition: 0.4s;
+    width: 15%;
+}
+
+.link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover, .link6:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.selectImages {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 70%; /* Adjust the width as needed */
+    height: 100%; /* Ensure the image container takes full height */
+}
+
+.picture {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+.selectLinks a svg {
+    width: 16px; /* Adjust the width as needed */
+    height: 16px; /* Adjust the height as needed */
+    display: inline;
+    opacity: 0;
+    transition: 0.4s;
+}
+.selectLinks a:hover svg {
+    opacity: 1;
+}
