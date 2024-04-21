@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Body from './Body';
 import Slides from './Slides';
 import Select from './Select';
+import Search from './Search';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <Body />
     <Slides />
     <Select />
+    <Search />
   </React.StrictMode>
 );
 

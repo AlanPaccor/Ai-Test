@@ -68,20 +68,29 @@
 .link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover, .link6:hover{
     color: white;
     border-bottom: 2px solid white;
+    cursor: pointer;
 }
 
 .selectImages {
-    position: absolute;
-    top: 5%;
+    position: relative;
+    bottom: 70%;
     left: 30%;
     width: 70%; /* Adjust the width as needed */
     height: 100%; /* Ensure the image container takes full height */
 }
 
-.picture {
+#images {
     max-width: 100%; /* Ensure the image doesn't exceed its container */
     height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the images absolutely */
+    bottom: 0%; /* Place the images at the top */
+    left: 0; /* Place the images at the left */
+    width: 100%; /* Make the images cover the container width */
+    height: 85%;
+    border-radius: 3%;
+    transition: opacity 0.4s; /* Add transition for smooth opacity change */
 }
+
 .selectLinks a svg {
     width: 16px; /* Adjust the width as needed */
     height: 16px; /* Adjust the height as needed */
@@ -89,6 +98,17 @@
     opacity: 0;
     transition: 0.4s;
 }
-.selectLinks a:hover svg {
+
+.selectPictures {
+    opacity: 0;
+}
+
+.active {
     opacity: 1;
+}
+.picture:hover ~ .learnImage{
+    opacity: 0;
+}
+.learnImage{
+    transition: 5s;
 }
