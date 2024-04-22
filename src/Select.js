@@ -15,7 +15,7 @@ export default function Select() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLearnImageVisible(true);
-        }, 3000); // Delay for 1 second
+        }, 100); // Delay for 1 second
         return () => clearTimeout(timer);
     }, []);
 
